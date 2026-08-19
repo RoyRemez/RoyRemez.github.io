@@ -5,3 +5,7 @@ design/portfolio-canvas.html
 node_modules/
 .DS_Store
 Thumbs.db
+
+# Stray npm lockfile from a one-off npx invocation; this is not an npm project
+package-lock.json
+package.json
