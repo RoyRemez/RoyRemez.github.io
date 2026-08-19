@@ -1,0 +1,95 @@
+{
+  "pages": [
+    {
+      "id": "site",
+      "name": "Site"
+    },
+    {
+      "id": "directions",
+      "name": "Directions (archive)"
+    }
+  ],
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1280,
+      "h": 3200,
+      "title": "Home — dark blueprint",
+      "page": "site"
+    },
+    {
+      "file": "Brief.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 620,
+      "h": 1010,
+      "title": "Brief",
+      "page": "directions"
+    },
+    {
+      "file": "PassState.dc.html",
+      "x": 720,
+      "y": 0,
+      "w": 820,
+      "h": 1230,
+      "title": "A — Pass State",
+      "page": "directions"
+    },
+    {
+      "file": "Editorial.dc.html",
+      "x": 1640,
+      "y": 0,
+      "w": 820,
+      "h": 1230,
+      "title": "B — Studio Editorial",
+      "page": "directions"
+    },
+    {
+      "file": "Blueprint.dc.html",
+      "x": 2560,
+      "y": 0,
+      "w": 820,
+      "h": 1230,
+      "title": "C — Blueprint",
+      "page": "directions"
+    },
+    {
+      "file": "Obsidian.dc.html",
+      "x": 3480,
+      "y": 0,
+      "w": 820,
+      "h": 1230,
+      "title": "D — Obsidian",
+      "page": "directions"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "palette-provisional",
+      "x": 1360,
+      "y": 0,
+      "w": 420,
+      "text": "Light theme — white/green.\n\nSame blueprint structure, re-toned: paper ground, faint green grid, one green accent (oklch 0.47 / 0.115 / 155) used for rules, figures and the primary action.\n\nThe dark version is still on the Directions page if you want to compare."
+    },
+    {
+      "id": "needs-confirming",
+      "x": 1360,
+      "y": 380,
+      "w": 420,
+      "text": "Updated from your LinkedIn:\n\nElo&Nitzan, Automation & Process Specialist, May 2026–present, Ramat HaSharon. Trunovate corrected to Jun 2022–Mar 2025.\n\nPhone removed — email and LinkedIn only.\n\nNo placeholders left on this page. Every fact on it comes from your CV, your LinkedIn, or your own project files."
+    },
+    {
+      "id": "still-to-build",
+      "x": 1360,
+      "y": 760,
+      "w": 420,
+      "text": "Now live as real code:\n\nindex.html + assets/styles.css at the repo root, responsive to phone width, ready for GitHub Pages.\n\nStill open:\n· A tools & workflow page — the 2D/3D pipeline as its own story\n· A case-study page for the packing solver\n· An about page\n· Hebrew / RTL version"
+    }
+  ],
+  "launch": {
+    "view": "canvas",
+    "page": "site"
+  }
+}
