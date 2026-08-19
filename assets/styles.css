@@ -711,3 +711,29 @@ h1 {
   .portrait { width: 64px; height: 64px; flex-basis: 64px; }
   .hero-head { gap: 16px; }
 }
+
+/* ---------- Wide card ----------
+   A fifth featured item would otherwise dangle in a two-column grid.
+   Spanning it gives the QA case the emphasis it earns. */
+
+.card--wide { grid-column: 1 / -1; flex-direction: row; }
+.card--wide .card-fig {
+  flex: 0 0 44%;
+  height: auto;
+  min-height: 260px;
+  border-bottom: 0;
+  border-inline-end: 1px dashed var(--rule);
+  padding: 20px;
+}
+.card--wide .card-body { flex: 1 1 auto; justify-content: center; }
+
+@media (max-width: 820px) {
+  .card--wide { flex-direction: column; }
+  .card--wide .card-fig {
+    flex: 0 0 auto;
+    min-height: 0;
+    height: 200px;
+    border-inline-end: 0;
+    border-bottom: 1px dashed var(--rule);
+  }
+}

@@ -116,7 +116,7 @@
       <div class="sec-head">
         <h2>Detail drawings</h2>
         <span class="fill" aria-hidden="true"></span>
-        <span class="tag">04 featured</span>
+        <span class="tag">05 featured</span>
       </div>
 
       <div class="work-grid">
@@ -241,7 +241,8 @@
           </div>
           <div class="card-body">
             <h3>From 2D plan to loaded 3D scene</h3>
-            <p>A packer that lays plans out in CAD, paired with an importer that opens the result in 3D with every matching model already placed — manual oversight and variation control kept in the loop, because the point was to remove the file-hunting, not the judgement. It touches every project the 2D and 3D department runs.</p>
+            <p>A packer that lays plans out in CAD, paired with an importer that opens the result in 3D with the matching models already placed. Filenames alone cannot guarantee the right asset, so the importer does not pretend otherwise: every match is presented with a rendered preview for the artist to confirm, swap for another variation, vary across duplicates in one pass, or skip entirely.</p>
+            <p>That confirmation step is what the tool is for. It stops older or unoptimised models — sometimes broken CAD that was never repaired — from entering a scene and dragging import time and performance down with them. It also surfaces better assets the artist would never have found searching the archive by hand. The previews come from the batch tool in Det. 01.</p>
             <div class="metrics">
               <div class="metric">
                 <b>Hours / project</b>
@@ -249,7 +250,7 @@
               </div>
             </div>
             <ul class="chips">
-              <li>CAD</li><li>3D</li><li>Pipeline</li>
+              <li>CAD</li><li>3D</li><li>Pipeline</li><li>QA</li>
             </ul>
           </div>
         </article>
@@ -287,6 +288,64 @@
           </div>
         </article>
 
+
+        <article class="card card--wide">
+          <div class="card-fig">
+            <span class="det">Det. 05</span>
+            <!-- Optional demo media: drop in
+                 <img src="../assets/media/det-05.gif" alt="CAD archive analyser">
+                 or a muted looping <video>; it replaces the drawing. -->
+            <svg width="340" height="220" viewBox="0 0 340 220" fill="none" aria-hidden="true">
+              <g stroke="var(--rule-strong)" stroke-width="1">
+                <path d="M20 24 h32 l12 12 v20 h-44 z"></path><path d="M52 24 v12 h12"></path>
+                <path d="M20 66 h32 l12 12 v20 h-44 z"></path><path d="M52 66 v12 h12"></path>
+                <path d="M20 108 h32 l12 12 v20 h-44 z"></path><path d="M52 108 v12 h12"></path>
+                <path d="M20 150 h32 l12 12 v20 h-44 z"></path><path d="M52 150 v12 h12"></path>
+              </g>
+              <g stroke="var(--rule)" stroke-width="0.9" stroke-dasharray="3 4">
+                <path d="M64 40 L120 100 M64 82 L120 104 M64 124 L120 116 M64 166 L120 120"></path>
+              </g>
+              <circle cx="148" cy="110" r="26" stroke="var(--accent)" stroke-width="1.3"></circle>
+              <path d="M148 92 L148 128 M130 110 L166 110" stroke="var(--accent)" stroke-width="0.9" stroke-opacity="0.55"></path>
+              <circle cx="148" cy="110" r="3.5" fill="var(--accent)"></circle>
+              <g stroke="var(--accent)" stroke-width="1.2">
+                <path d="M174 102 C196 90, 198 58, 216 48"></path><path d="M210 44 L216 48 L211 53"></path>
+              </g>
+              <g stroke="var(--rule-strong)" stroke-width="1.1">
+                <path d="M174 110 L216 110"></path><path d="M210 106 L216 110 L210 115"></path>
+              </g>
+              <g stroke="var(--rule-strong)" stroke-width="1.1" stroke-dasharray="4 4">
+                <path d="M174 118 C196 130, 198 162, 216 172"></path>
+              </g>
+              <rect x="220" y="31" width="96" height="34" stroke="var(--accent)" fill="var(--accent-wash)" stroke-width="1.1"></rect>
+              <rect x="220" y="93" width="96" height="34" stroke="var(--rule-strong)" stroke-width="1"></rect>
+              <rect x="220" y="155" width="96" height="34" stroke="var(--rule-strong)" stroke-width="1" stroke-dasharray="4 4"></rect>
+              <g stroke="var(--accent)" stroke-width="1.1">
+                <path d="M230 180 L236 168 L242 180 Z"></path><path d="M236 172 L236 176"></path>
+              </g>
+              <g fill="var(--muted)" font-family="Heebo, sans-serif" font-size="10" font-weight="500" text-anchor="middle" direction="ltr">
+                <text x="268" y="52">3D ROUTE</text>
+                <text x="268" y="114">2D ONLY</text>
+                <text x="280" y="177">REJECT</text>
+              </g>
+            </svg>
+          </div>
+          <div class="card-body">
+            <h3>Knowing what&rsquo;s in the archive before it breaks a scene</h3>
+            <p>A batch analyser that opens CAD drawings through a headless AutoCAD process and reports what they actually contain, rather than what the filename claims. It finds 3D drawings with no corresponding 3D asset &mdash; work that costs a day the first time someone needs one &mdash; sorts each file by the best route into production, and separates the salvageable from the useless from the actively dangerous.</p>
+            <p>The dangerous ones justify the tool: a 16&nbsp;GB drawing, or one carrying fifteen thousand nested empty objects, will take a scene down if it is loaded blind. Findings feed a companion fixer that repairs the defect classes common enough to automate &mdash; established by testing across the archive first, rather than guessed at.</p>
+            <div class="metrics">
+              <div class="metric">
+                <b>16 GB</b>
+                <span>Largest single drawing it caught</span>
+              </div>
+            </div>
+            <ul class="chips">
+              <li>QA</li><li>CAD</li><li>Triage</li><li>Batch</li>
+            </ul>
+          </div>
+        </article>
+
       </div>
 
       <aside class="gen-note">
@@ -301,15 +360,14 @@
       <div class="sec-head">
         <h2>Schedule of works</h2>
         <span class="fill" aria-hidden="true"></span>
-        <span class="tag">05 — 13</span>
+        <span class="tag">06 — 13</span>
       </div>
 
       <div class="sched-grid">
         <div class="sched-col">
           <h3>Pipeline &amp; 3D</h3>
           <ul>
-            <li><span class="sched-num">05</span><span>Realtime GPU rendering introduced alongside the offline pipeline, cutting iteration time on live projects</span></li>
-            <li><span class="sched-num">06</span><span>Batch analyser and repair tool for CAD drawings</span></li>
+            <li><span class="sched-num">06</span><span>Realtime GPU rendering introduced alongside the offline pipeline, cutting iteration time on live projects</span></li>
             <li><span class="sched-num">07</span><span>Tools for rapid creation of 3D scene elements, replacing manual modelling</span></li>
             <li><span class="sched-num">08</span><span>Batch analysis and optimisation across the shared asset library</span></li>
           </ul>
@@ -374,6 +432,16 @@
           </div>
           <p class="rev-desc">Established a QA pipeline from nothing — test strategy, case planning, documentation and SQL database verification.</p>
           <p class="rev-date">2022</p>
+        </article>
+
+        <article class="rev-row rev-row--edu">
+          <p class="rev-id">Cert</p>
+          <div class="rev-role">
+            <b>Full Stack Test Automation + AI</b>
+            <span>Atid College — עתיד האוטומציה</span>
+          </div>
+          <p class="rev-desc">Python with Playwright across UI, API and database layers; Git, Docker, Jenkins and GitHub Actions for the test environment; MCP and agent-based tooling. Broader than the frontend-only scope most automation courses stop at.</p>
+          <p class="rev-date">Mar–Aug 2026<br><small>~70 hours</small></p>
         </article>
 
         <article class="rev-row rev-row--edu">
