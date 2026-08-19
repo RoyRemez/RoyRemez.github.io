@@ -116,7 +116,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .skip {
   position: absolute;
-  left: -9999px;
+  inset-inline-start: -9999px;
   top: 0;
   background: var(--ink);
   color: var(--paper);
@@ -125,7 +125,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   font-size: 14px;
   font-weight: 500;
 }
-.skip:focus { left: 0; }
+.skip:focus { inset-inline-start: 0; }
 
 .wrap {
   max-width: var(--maxw);
@@ -266,13 +266,13 @@ h1 {
 }
 .discipline {
   padding: 28px 24px;
-  border-right: 1px dashed var(--rule);
+  border-inline-end: 1px dashed var(--rule);
   display: flex;
   flex-direction: column;
   gap: 9px;
 }
-.discipline:first-child { padding-left: 0; }
-.discipline:last-child { padding-right: 0; border-right: 0; }
+.discipline:first-child { padding-inline-start: 0; }
+.discipline:last-child { padding-inline-end: 0; border-inline-end: 0; }
 .discipline h3 { font-size: 20px; font-weight: 500; letter-spacing: -0.01em; }
 .discipline p { font-size: 15px; line-height: 1.6; color: var(--body); }
 
@@ -315,7 +315,7 @@ h1 {
 .card-fig .det {
   position: absolute;
   top: 12px;
-  left: 14px;
+  inset-inline-start: 14px;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.12em;
@@ -375,19 +375,19 @@ h1 {
 }
 .rev-head div {
   padding: 12px 16px;
-  border-right: 1px solid var(--rule-faint);
+  border-inline-end: 1px solid var(--rule-faint);
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--muted);
 }
-.rev-head div:last-child { border-right: 0; }
+.rev-head div:last-child { border-inline-end: 0; }
 
 .rev-row { border-bottom: 1px solid var(--rule-faint); }
 .rev-row:last-child { border-bottom: 0; }
-.rev-row > * { padding: 20px 16px; border-right: 1px solid var(--rule-faint); }
-.rev-row > *:last-child { border-right: 0; }
+.rev-row > * { padding: 20px 16px; border-inline-end: 1px solid var(--rule-faint); }
+.rev-row > *:last-child { border-inline-end: 0; }
 .rev-id {
   font-size: 12.5px;
   font-weight: 500;
@@ -467,12 +467,12 @@ h1 {
 }
 .title-block .cell {
   padding: 17px 18px;
-  border-right: 1px solid var(--rule-strong);
+  border-inline-end: 1px solid var(--rule-strong);
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
-.title-block .cell:last-child { border-right: 0; }
+.title-block .cell:last-child { border-inline-end: 0; }
 .title-block dt {
   font-size: 11px;
   font-weight: 400;
@@ -504,13 +504,13 @@ h1 {
   .hero-fig { flex: 0 0 auto; align-self: flex-start; width: 260px; }
   .disciplines .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .discipline { padding-inline: 24px; }
-  .discipline:nth-child(odd) { padding-left: 0; }
-  .discipline:nth-child(even) { padding-right: 0; border-right: 0; }
+  .discipline:nth-child(odd) { padding-inline-start: 0; }
+  .discipline:nth-child(even) { padding-inline-end: 0; border-inline-end: 0; }
   .discipline:nth-child(-n+2) { border-bottom: 1px dashed var(--rule); }
   .tools .wrap { flex-direction: column; gap: 26px; }
   .tools-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 28px; width: 100%; }
   .title-block .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .title-block .cell:nth-child(even) { border-right: 0; }
+  .title-block .cell:nth-child(even) { border-inline-end: 0; }
   .title-block .cell:nth-child(-n+2) { border-bottom: 1px solid var(--rule-strong); }
 }
 
@@ -523,7 +523,7 @@ h1 {
   /* Revision table restacks into records */
   .rev-head { display: none; }
   .rev-row { grid-template-columns: minmax(0, 1fr); border-bottom: 1px solid var(--rule-strong); }
-  .rev-row > * { border-right: 0; padding: 14px 18px; }
+  .rev-row > * { border-inline-end: 0; padding: 14px 18px; }
   .rev-row > *:first-child { padding-top: 18px; }
   .rev-row > *:last-child { padding-bottom: 18px; }
   .rev-id { padding-bottom: 0; }
@@ -538,12 +538,12 @@ h1 {
   .nav { gap: 18px; flex-wrap: wrap; }
   .mark-role, .mark-sep { display: none; }
   .disciplines .grid { grid-template-columns: minmax(0, 1fr); }
-  .discipline { padding-inline: 0; border-right: 0; border-bottom: 1px dashed var(--rule); }
+  .discipline { padding-inline: 0; border-inline-end: 0; border-bottom: 1px dashed var(--rule); }
   .discipline:last-child { border-bottom: 0; }
   .hero-fig { width: 100%; max-width: 300px; }
   .tools-grid { grid-template-columns: minmax(0, 1fr); }
   .title-block .grid { grid-template-columns: minmax(0, 1fr); }
-  .title-block .cell { border-right: 0; border-bottom: 1px solid var(--rule-strong); }
+  .title-block .cell { border-inline-end: 0; border-bottom: 1px solid var(--rule-strong); }
   .title-block .cell:last-child { border-bottom: 0; }
   .card-fig { height: 170px; padding: 16px; }
 }
@@ -557,3 +557,49 @@ h1 {
   .sheet-head, .actions, .skip { display: none; }
   .card, .rev-table, .contact-panel, .title-block .grid { break-inside: avoid; }
 }
+
+/* ---------- Hebrew / RTL ----------
+   Layout mirrors automatically (logical properties above). Two things
+   don't translate: Hebrew has no letter case, so uppercase tracking on
+   labels is noise, and Heebo's Hebrew runs slightly tighter. */
+
+[dir="rtl"] .tag,
+[dir="rtl"] .mark-name,
+[dir="rtl"] .mark-role,
+[dir="rtl"] .nav a,
+[dir="rtl"] .btn,
+[dir="rtl"] .chips li,
+[dir="rtl"] .card-fig .det,
+[dir="rtl"] .metric span,
+[dir="rtl"] .rev-head div,
+[dir="rtl"] .rev-id,
+[dir="rtl"] .rev-role span,
+[dir="rtl"] .rev-date,
+[dir="rtl"] .tools-grid h3,
+[dir="rtl"] .title-block dt,
+[dir="rtl"] .title-block dd,
+[dir="rtl"] .hero-fig figcaption {
+  letter-spacing: 0;
+  text-transform: none;
+}
+[dir="rtl"] h1 { letter-spacing: -0.015em; line-height: 1.15; }
+[dir="rtl"] h2, [dir="rtl"] h3 { letter-spacing: -0.005em; }
+[dir="rtl"] .lede, [dir="rtl"] .card-body p, [dir="rtl"] .rev-desc { line-height: 1.75; }
+
+/* Latin runs inside Hebrew text (tool names, dates) keep their own direction */
+[dir="rtl"] .ltr { unicode-bidi: isolate; direction: ltr; }
+
+/* ---------- Language switch ---------- */
+
+.lang {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-inline: 12px;
+  margin-inline-start: 6px;
+  border: 1px solid var(--rule);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+}
+.lang:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
