@@ -46,13 +46,18 @@
     <div class="wrap">
       <div class="hero-text">
         <p class="tag tag--accent figref">Fig. 1 — Scope of practice</p>
-        <h1>The bug is usually in the process.</h1>
+        <div class="hero-head">
+          <!-- Portrait: replace the div below with
+               <img class="portrait" src="../assets/media/portrait.jpg" alt="Roy Remez" width="96" height="96"> -->
+          <div class="portrait portrait--placeholder">Photo</div>
+          <h1>The bug is usually in the process.</h1>
+        </div>
         <p class="lede">Three years of QA on factory systems taught me a method: reproduce it, find the actual cause, propose the fix. I point that method at production workflows now instead of test cases. Most of what I've built started with someone saying "this part always takes forever."</p>
         <div class="actions">
           <a class="btn btn--solid" href="#work">View the work</a>
           <a class="btn btn--ghost" href="#contact">Get in touch</a>
         </div>
-      </div>
+        </div>
 
       <figure class="hero-fig">
         <div class="frame">
@@ -119,6 +124,9 @@
         <article class="card">
           <div class="card-fig">
             <span class="det">Det. 01</span>
+            <!-- Optional demo media: drop in
+                 <img src="../assets/media/det-01.gif" alt="Preview render tool">
+                 or a muted looping <video>; it replaces the drawing. -->
             <svg width="290" height="150" viewBox="0 0 290 150" fill="none" aria-hidden="true">
               <g stroke="var(--accent)" fill="var(--accent-wash)" stroke-width="1">
                 <rect x="30" y="26" width="44" height="30" rx="1"></rect>
@@ -170,6 +178,9 @@
         <article class="card">
           <div class="card-fig">
             <span class="det">Det. 02</span>
+            <!-- Optional demo media: drop in
+                 <img src="../assets/media/det-02.gif" alt="Load time improvement">
+                 or a muted looping <video>; it replaces the drawing. -->
             <svg width="290" height="150" viewBox="0 0 290 150" fill="none" aria-hidden="true">
               <path d="M40 30 L40 120" stroke="var(--rule-strong)" stroke-width="1"></path>
               <rect x="40" y="44" width="212" height="22" stroke="var(--rule-strong)" stroke-width="1"></rect>
@@ -184,12 +195,12 @@
             </svg>
           </div>
           <div class="card-body">
-            <h3>Scene load times cut by two thirds</h3>
-            <p>Production scenes took ten minutes to open, and everyone had a theory about why. Profiling the actual cause rather than the assumed one, then rebuilding how assets load, brought it under three — on every scene, for everyone in the studio.</p>
+            <h3>Load times cut across the board</h3>
+            <p>Scenes took ten minutes to open — the loudest case, but not the only one. Profiling the actual cause rather than the assumed one, then rebuilding how assets load, brought scene opening under three minutes and shortened load times elsewhere in the pipeline with it. Three minutes is where the current phase landed, not where it stops.</p>
             <div class="metrics">
               <div class="metric">
                 <b>10 min → &lt;3 min</b>
-                <span>Scene open time</span>
+                <span>Scene open time — current phase</span>
               </div>
             </div>
             <ul class="chips">
@@ -201,6 +212,9 @@
         <article class="card">
           <div class="card-fig">
             <span class="det">Det. 03</span>
+            <!-- Optional demo media: drop in
+                 <img src="../assets/media/det-03.gif" alt="Plan to 3D scene import">
+                 or a muted looping <video>; it replaces the drawing. -->
             <svg width="290" height="150" viewBox="0 0 290 150" fill="none" aria-hidden="true">
               <rect x="16" y="32" width="100" height="86" stroke="var(--rule-strong)" stroke-width="1" stroke-dasharray="4 4"></rect>
               <g stroke="var(--accent)" stroke-width="1.1">
@@ -227,7 +241,13 @@
           </div>
           <div class="card-body">
             <h3>From 2D plan to loaded 3D scene</h3>
-            <p>A packer that lays plans out in CAD, paired with an importer that opens the result in 3D with every matching model already placed — manual oversight and variation control kept in the loop, because the point was to remove the file-hunting, not the judgement.</p>
+            <p>A packer that lays plans out in CAD, paired with an importer that opens the result in 3D with every matching model already placed — manual oversight and variation control kept in the loop, because the point was to remove the file-hunting, not the judgement. It touches every project the 2D and 3D department runs.</p>
+            <div class="metrics">
+              <div class="metric">
+                <b>Hours / project</b>
+                <span>Across a 2D and 3D department</span>
+              </div>
+            </div>
             <ul class="chips">
               <li>CAD</li><li>3D</li><li>Pipeline</li>
             </ul>
@@ -237,6 +257,9 @@
         <article class="card">
           <div class="card-fig">
             <span class="det">Det. 04</span>
+            <!-- Optional demo media: drop in
+                 <img src="../assets/media/det-04.gif" alt="Field reporting tool">
+                 or a muted looping <video>; it replaces the drawing. -->
             <svg width="290" height="150" viewBox="0 0 290 150" fill="none" aria-hidden="true">
               <rect x="44" y="26" width="52" height="98" rx="5" stroke="var(--rule-strong)" stroke-width="1"></rect>
               <path d="M62 38 L78 38" stroke="var(--rule-strong)" stroke-width="1"></path>
@@ -265,6 +288,11 @@
         </article>
 
       </div>
+
+      <aside class="gen-note">
+        <span class="tag tag--accent">General note</span>
+        <p>Details 02 and 03 compound. Shorter load times across the board, combined with an automated plan-to-scene handoff, take hours out of each project for a whole department of 2D and 3D staff. Over a year that adds up to days or weeks of recovered work time — an estimate from the floor, not a measured figure.</p>
+      </aside>
     </div>
   </section>
 

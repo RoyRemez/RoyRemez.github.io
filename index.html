@@ -46,13 +46,18 @@
     <div class="wrap">
       <div class="hero-text">
         <p class="tag tag--accent figref">איור 1 — תחומי העיסוק</p>
-        <h1>הבאג נמצא בדרך כלל בתהליך.</h1>
+        <div class="hero-head">
+          <!-- Portrait: replace the div below with
+               <img class="portrait" src="assets/media/portrait.jpg" alt="רועי רמז" width="96" height="96"> -->
+          <div class="portrait portrait--placeholder">תמונה</div>
+          <h1>הבאג נמצא בדרך כלל בתהליך.</h1>
+        </div>
         <p class="lede">שלוש שנים של <span class="ltr">QA</span> על מערכות מפעל לימדו אותי שיטה: לשחזר, לאתר את הסיבה האמיתית, להציע פתרון. היום אני מכוון את השיטה הזאת לתהליכי הייצור במקום למקרי בדיקה. רוב מה שבניתי התחיל במישהו שאמר "החלק הזה תמיד לוקח נצח".</p>
         <div class="actions">
           <a class="btn btn--solid" href="#work">לצפייה בעבודות</a>
           <a class="btn btn--ghost" href="#contact">יצירת קשר</a>
         </div>
-      </div>
+        </div>
 
       <figure class="hero-fig">
         <div class="frame">
@@ -119,6 +124,9 @@
         <article class="card">
           <div class="card-fig">
             <span class="det">פרט 01</span>
+            <!-- Optional demo media: drop in
+                 <img src="assets/media/det-01.gif" alt="כלי רנדר תצוגות מקדימות">
+                 or a muted looping <video>; it replaces the drawing. -->
             <svg width="290" height="150" viewBox="0 0 290 150" fill="none" aria-hidden="true">
               <g stroke="var(--accent)" fill="var(--accent-wash)" stroke-width="1">
                 <rect x="30" y="26" width="44" height="30" rx="1"></rect>
@@ -170,6 +178,9 @@
         <article class="card">
           <div class="card-fig">
             <span class="det">פרט 02</span>
+            <!-- Optional demo media: drop in
+                 <img src="assets/media/det-02.gif" alt="שיפור זמני טעינה">
+                 or a muted looping <video>; it replaces the drawing. -->
             <svg width="290" height="150" viewBox="0 0 290 150" fill="none" aria-hidden="true">
               <path d="M40 30 L40 120" stroke="var(--rule-strong)" stroke-width="1"></path>
               <rect x="40" y="44" width="212" height="22" stroke="var(--rule-strong)" stroke-width="1"></rect>
@@ -184,12 +195,12 @@
             </svg>
           </div>
           <div class="card-body">
-            <h3>זמני טעינת סצנה, קצרו בשני שלישים</h3>
-            <p>סצנות ייצור נפתחו בעשר דקות, ולכל אחד הייתה תיאוריה למה. איתור הסיבה האמיתית במקום זו שהניחו, ובנייה מחדש של אופן טעינת הנכסים, הורידו את זה לפחות משלוש — בכל סצנה, לכל אחד בסטודיו.</p>
+            <h3>זמני טעינה קוצרו לרוחב הקו</h3>
+            <p>סצנות נפתחו בעשר דקות — המקרה הרועש ביותר, אבל לא היחיד. איתור הסיבה האמיתית במקום זו שהניחו, ובנייה מחדש של אופן טעינת הנכסים, הורידו את פתיחת הסצנה לפחות משלוש דקות וקיצרו איתה זמני טעינה נוספים לאורך הפייפליין. שלוש דקות הן המצב בשלב הנוכחי, לא היעד.</p>
             <div class="metrics">
               <div class="metric">
                 <b>10 דק׳ ← פחות מ-3</b>
-                <span>זמן פתיחת סצנה</span>
+                <span>זמן פתיחת סצנה — בשלב הנוכחי</span>
               </div>
             </div>
             <ul class="chips">
@@ -201,6 +212,9 @@
         <article class="card">
           <div class="card-fig">
             <span class="det">פרט 03</span>
+            <!-- Optional demo media: drop in
+                 <img src="assets/media/det-03.gif" alt="ייבוא מתוכנית לסצנה">
+                 or a muted looping <video>; it replaces the drawing. -->
             <svg width="290" height="150" viewBox="0 0 290 150" fill="none" aria-hidden="true">
               <rect x="16" y="32" width="100" height="86" stroke="var(--rule-strong)" stroke-width="1" stroke-dasharray="4 4"></rect>
               <g stroke="var(--accent)" stroke-width="1.1">
@@ -227,7 +241,13 @@
           </div>
           <div class="card-body">
             <h3>מתוכנית דו-ממדית לסצנה תלת-ממדית טעונה</h3>
-            <p>כלי שאורז תוכניות ב-<span class="ltr">CAD</span>, ולצידו מייבא שפותח את התוצאה בתלת-ממד כשכל המודלים המתאימים כבר במקומם — עם פיקוח ידני ושליטה בווריאציות לאורך הדרך, כי המטרה הייתה למחוק את חיפוש הקבצים, לא את שיקול הדעת.</p>
+            <p>כלי שאורז תוכניות ב-<span class="ltr">CAD</span>, ולצידו מייבא שפותח את התוצאה בתלת-ממד כשכל המודלים המתאימים כבר במקומם — עם פיקוח ידני ושליטה בווריאציות לאורך הדרך, כי המטרה הייתה למחוק את חיפוש הקבצים, לא את שיקול הדעת. הכלי נוגע בכל פרויקט שמחלקת הדו-ממד והתלת-ממד מריצה.</p>
+            <div class="metrics">
+              <div class="metric">
+                <b>שעות לפרויקט</b>
+                <span>לרוחב מחלקת דו-ממד ותלת-ממד</span>
+              </div>
+            </div>
             <ul class="chips">
               <li class="ltr">CAD</li><li>תלת-ממד</li><li>פייפליין</li>
             </ul>
@@ -237,6 +257,9 @@
         <article class="card">
           <div class="card-fig">
             <span class="det">פרט 04</span>
+            <!-- Optional demo media: drop in
+                 <img src="assets/media/det-04.gif" alt="כלי דיווח מהשטח">
+                 or a muted looping <video>; it replaces the drawing. -->
             <svg width="290" height="150" viewBox="0 0 290 150" fill="none" aria-hidden="true">
               <rect x="44" y="26" width="52" height="98" rx="5" stroke="var(--rule-strong)" stroke-width="1"></rect>
               <path d="M62 38 L78 38" stroke="var(--rule-strong)" stroke-width="1"></path>
@@ -265,6 +288,11 @@
         </article>
 
       </div>
+
+      <aside class="gen-note">
+        <span class="tag tag--accent">הערה כללית</span>
+        <p>פרטים 02 ו-03 מצטברים. קיצור זמני הטעינה לרוחב הקו, יחד עם מעבר אוטומטי מתוכנית לסצנה, מוציא שעות מכל פרויקט עבור מחלקה שלמה של אנשי דו-ממד ותלת-ממד. בפריסה שנתית מדובר בימים עד שבועות של זמן עבודה שחוזר — הערכה מהשטח, לא מדידה.</p>
+      </aside>
     </div>
   </section>
 
