@@ -1,26 +1,39 @@
 {
+  "pages": [
+    { "id": "site", "name": "Site" },
+    { "id": "directions", "name": "Directions (archive)" }
+  ],
   "artboards": [
-    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 620, "h": 1010, "title": "Brief" },
-    { "file": "PassState.dc.html", "x": 720, "y": 0, "w": 820, "h": 1230, "title": "A — Pass State" },
-    { "file": "Editorial.dc.html", "x": 1640, "y": 0, "w": 820, "h": 1230, "title": "B — Studio Editorial" },
-    { "file": "Blueprint.dc.html", "x": 2560, "y": 0, "w": 820, "h": 1230, "title": "C — Blueprint" },
-    { "file": "Obsidian.dc.html", "x": 3480, "y": 0, "w": 820, "h": 1230, "title": "D — Obsidian" }
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 1280, "h": 3200, "title": "Home — dark blueprint", "page": "site" },
+
+    { "file": "Brief.dc.html", "x": 0, "y": 0, "w": 620, "h": 1010, "title": "Brief", "page": "directions" },
+    { "file": "PassState.dc.html", "x": 720, "y": 0, "w": 820, "h": 1230, "title": "A — Pass State", "page": "directions" },
+    { "file": "Editorial.dc.html", "x": 1640, "y": 0, "w": 820, "h": 1230, "title": "B — Studio Editorial", "page": "directions" },
+    { "file": "Blueprint.dc.html", "x": 2560, "y": 0, "w": 820, "h": 1230, "title": "C — Blueprint", "page": "directions" },
+    { "file": "Obsidian.dc.html", "x": 3480, "y": 0, "w": 820, "h": 1230, "title": "D — Obsidian", "page": "directions" }
   ],
   "annotations": [
     {
-      "id": "how-to-choose",
-      "x": 720,
-      "y": -190,
-      "w": 700,
-      "text": "Pick a direction, don't grade the copy.\n\nThese are aesthetic arguments at low fidelity. Wording, spacing and images all get rebuilt properly once you tell me which one is you. You can also mix — e.g. C's structure with D's dark palette.\n\n[N] and [EMAIL] are placeholders for facts I couldn't verify."
+      "id": "palette-provisional",
+      "x": 1360,
+      "y": 0,
+      "w": 420,
+      "text": "C + D, merged.\n\nC gives the structure: sheet header, figure numbers, the discipline table, the revision block, the title-block footer. D gives the dark ground and the gold accent.\n\nA dark blueprint is also historically honest — drawings really were light lines on a dark field.\n\nColours and graphics are placeholders per your note. The line art is drawn, not final."
     },
     {
-      "id": "linkedin-blocked",
-      "x": 0,
-      "y": -190,
-      "w": 620,
-      "text": "LinkedIn blocks automated reading (HTTP 999), so I built this from your Behance profile, a search snippet, and your own project folders. Paste your LinkedIn text any time and I'll replace the guesses."
+      "id": "needs-confirming",
+      "x": 1360,
+      "y": 340,
+      "w": 420,
+      "text": "Needs you to confirm:\n\n1. Current role — your CV ends at Trunovate 2025, but your project files show you running IT and the 3D pipeline at a playground/arch-viz studio. Marked [STUDIO NAME] and [CONFIRM] in the revision table.\n\n2. [N] products in the 3D library.\n\n3. Phone number is on the page — say if you'd rather it weren't public."
+    },
+    {
+      "id": "still-to-build",
+      "x": 1360,
+      "y": 700,
+      "w": 420,
+      "text": "Not built yet — tell me which you want:\n\n· A case-study page for the packing solver (your strongest single story)\n· A 3D / arch-viz gallery page\n· An about page\n· Mobile width for this home page\n· Hebrew / RTL version"
     }
   ],
-  "launch": { "view": "canvas" }
+  "launch": { "view": "canvas", "page": "site" }
 }

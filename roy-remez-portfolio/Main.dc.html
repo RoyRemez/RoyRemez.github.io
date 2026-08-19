@@ -8,83 +8,326 @@
 <x-dc>
 <helmet>
   <style>
-    body { margin: 0; background: #ffffff; }
-    a { color: #7a5c1e; } a:hover { color: #543f12; }
+    body { margin: 0; background: #06080b; }
+    a { color: oklch(0.78 0.11 82); text-decoration: none; } a:hover { color: oklch(0.88 0.09 82); }
   </style>
 </helmet>
-<div style="width: 620px; min-height: 1000px; box-sizing: border-box; padding: 56px 52px; background: #fbfaf7; color: #17181a; font-family: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif; display: flex; flex-direction: column; gap: 34px;">
+<div style="width: 1280px; min-height: 2760px; box-sizing: border-box; background: #0a0d12; background-image: linear-gradient(rgba(125,170,215,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(125,170,215,0.05) 1px, transparent 1px); background-size: 24px 24px; color: #e7eaef; font-family: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif; display: flex; flex-direction: column;">
 
-  <div style="display: flex; flex-direction: column; gap: 12px;">
-    <div style="font-family: ui-monospace, 'Cascadia Code', Consolas, monospace; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #8a8578;">Direction round · pick one</div>
-    <h1 style="margin: 0; font-size: 40px; line-height: 1.05; font-weight: 500; letter-spacing: -0.02em;">Four ways to build your portfolio site.</h1>
-    <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4a4b4e; max-width: 46ch; text-wrap: pretty;">Each board to the right is a different aesthetic argument, not a different colour scheme. Look at them, tell me which one feels like you, and I'll build that one out properly.</p>
+  <!-- SHEET HEADER -->
+  <div style="display: flex; align-items: center; justify-content: space-between; padding: 16px 48px; border-bottom: 1px solid rgba(140,175,205,0.16); font-family: ui-monospace, 'Cascadia Code', Consolas, monospace; font-size: 11px; letter-spacing: 0.14em; color: #7f8b9b; background: rgba(10,13,18,0.72);">
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="oklch(0.78 0.11 82)" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 L20 8 L20 16 L12 21 L4 16 L4 8 Z"></path><circle cx="12" cy="12" r="2.5" fill="oklch(0.78 0.11 82)" stroke="none"></circle></svg>
+      <span style="color: #e7eaef; letter-spacing: 0.1em;">R. REMEZ</span>
+      <span style="color: #4e5a69;">/</span>
+      <span>QA &amp; AUTOMATION</span>
+    </div>
+    <div style="display: flex; gap: 30px;">
+      <span>WORK</span><span>DISCIPLINES</span><span>EXPERIENCE</span><span style="color: oklch(0.78 0.11 82);">CONTACT</span>
+    </div>
   </div>
 
-  <div style="height: 1px; background: #e0dcd2;"></div>
-
-  <div style="display: flex; flex-direction: column; gap: 18px;">
-    <div style="font-family: ui-monospace, 'Cascadia Code', Consolas, monospace; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #8a8578;">What I'm working from</div>
-    <div style="display: flex; flex-direction: column; gap: 14px; font-size: 14.5px; line-height: 1.5; color: #3a3b3e;">
-      <div style="display: flex; gap: 14px;">
-        <div style="width: 88px; flex-shrink: 0; font-family: ui-monospace, 'Cascadia Code', Consolas, monospace; font-size: 11.5px; color: #8a8578; padding-top: 2px;">CONFIRMED</div>
-        <div style="flex-grow: 1;">Behance shows arch-viz and playground visualisation under <em>ShockWave</em>, Rosh HaAyin. Your local projects show Selenium/Python automation, a PocketBase ops dashboard, AutoCAD and 3ds&nbsp;Max pipeline tooling, and the scatter-packing solver.</div>
+  <!-- HERO -->
+  <div style="padding: 78px 48px 64px; display: flex; gap: 56px; align-items: flex-start;">
+    <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 26px;">
+      <div style="display: flex; align-items: center; gap: 12px; font-family: ui-monospace, Consolas, monospace; font-size: 11px; letter-spacing: 0.18em; color: oklch(0.78 0.11 82);">
+        <span style="width: 22px; height: 1px; background: oklch(0.78 0.11 82);"></span>
+        FIG. 1 &mdash; SCOPE OF PRACTICE
       </div>
-      <div style="display: flex; gap: 14px;">
-        <div style="width: 88px; flex-shrink: 0; font-family: ui-monospace, 'Cascadia Code', Consolas, monospace; font-size: 11.5px; color: #8a8578; padding-top: 2px;">UNVERIFIED</div>
-        <div style="flex-grow: 1;">LinkedIn blocks automated reads, so employer, titles and dates came from a search snippet — <strong style="font-weight: 600;">QA Engineer at TRUNOVATE</strong>. Correct me and I'll fix it everywhere.</div>
+      <h1 style="margin: 0; font-size: 66px; line-height: 1.02; font-weight: 400; letter-spacing: -0.035em; max-width: 15ch; text-wrap: pretty;">I test the systems that run factories.</h1>
+      <p style="margin: 0; font-size: 20px; line-height: 1.58; color: #a3adbc; max-width: 54ch; text-wrap: pretty;">Four years of QA and test automation across OPC, MES and ERP platforms &mdash; the software layer where a missed defect stops a production line. Around that sits the rest of what I do: process improvement, IT operations, and 3D production.</p>
+      <div style="display: flex; gap: 14px; padding-top: 10px;">
+        <div style="background: oklch(0.78 0.11 82); color: #14100a; padding: 0 26px; height: 46px; display: flex; align-items: center; font-family: ui-monospace, Consolas, monospace; font-size: 12px; letter-spacing: 0.1em;">VIEW THE WORK</div>
+        <div style="border: 1px solid rgba(140,175,205,0.3); color: #e7eaef; padding: 0 26px; height: 46px; display: flex; align-items: center; font-family: ui-monospace, Consolas, monospace; font-size: 12px; letter-spacing: 0.1em;">DOWNLOAD CV</div>
+      </div>
+    </div>
+
+    <div style="width: 300px; flex-shrink: 0; position: relative;">
+      <div style="border: 1px dashed rgba(140,175,205,0.34); padding: 14px; box-sizing: border-box;">
+        <svg width="270" height="252" viewBox="0 0 270 252" fill="none" aria-hidden="true">
+          <g stroke="rgba(160,195,225,0.42)" stroke-width="1">
+            <path d="M135 34 L216 80 L216 172 L135 218 L54 172 L54 80 Z"></path>
+            <path d="M135 34 L135 218 M54 80 L216 172 M216 80 L54 172" stroke-opacity="0.32"></path>
+          </g>
+          <g stroke="oklch(0.78 0.11 82)" stroke-width="1.4">
+            <path d="M135 34 L216 80 L135 126 L54 80 Z"></path>
+          </g>
+          <circle cx="135" cy="80" r="4" fill="oklch(0.78 0.11 82)"></circle>
+          <g stroke="rgba(160,195,225,0.3)" stroke-width="0.8" stroke-dasharray="3 4">
+            <path d="M54 80 L18 58 M216 80 L252 58 M135 218 L135 244"></path>
+          </g>
+          <g fill="#7f8b9b" font-family="ui-monospace, Consolas, monospace" font-size="9" letter-spacing="1">
+            <text x="126" y="72">QA</text>
+            <text x="8" y="52">IT</text>
+            <text x="238" y="52">3D</text>
+            <text x="112" y="252">PROCESS</text>
+          </g>
+        </svg>
+      </div>
+      <div style="font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.12em; color: #5d6879; padding-top: 10px;">QA AT THE FACE &mdash; THREE SUPPORTING PLANES</div>
+    </div>
+  </div>
+
+  <!-- DISCIPLINE TABLE -->
+  <div style="margin: 0 48px; border-top: 1px solid rgba(140,175,205,0.28); border-bottom: 1px solid rgba(140,175,205,0.28); display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));">
+    <div style="padding: 26px 24px 26px 0; border-right: 1px dashed rgba(140,175,205,0.2); display: flex; flex-direction: column; gap: 9px;">
+      <div style="font-family: ui-monospace, Consolas, monospace; font-size: 10px; letter-spacing: 0.16em; color: oklch(0.78 0.11 82);">A &mdash; PRIMARY</div>
+      <div style="font-size: 19px;">QA &amp; Automation</div>
+      <div style="font-size: 14px; line-height: 1.55; color: #8d98a8;">Test strategy, pipelines and regression suites. Selenium and Python, SQL verification, JIRA and X-Ray.</div>
+    </div>
+    <div style="padding: 26px 24px; border-right: 1px dashed rgba(140,175,205,0.2); display: flex; flex-direction: column; gap: 9px;">
+      <div style="font-family: ui-monospace, Consolas, monospace; font-size: 10px; letter-spacing: 0.16em; color: #6c7786;">B</div>
+      <div style="font-size: 19px;">Process</div>
+      <div style="font-size: 14px; line-height: 1.55; color: #8d98a8;">BI analysis on testing itself &mdash; finding where quality work is slow, then removing that step.</div>
+    </div>
+    <div style="padding: 26px 24px; border-right: 1px dashed rgba(140,175,205,0.2); display: flex; flex-direction: column; gap: 9px;">
+      <div style="font-family: ui-monospace, Consolas, monospace; font-size: 10px; letter-spacing: 0.16em; color: #6c7786;">C</div>
+      <div style="font-size: 19px;">IT Operations</div>
+      <div style="font-size: 14px; line-height: 1.55; color: #8d98a8;">Internal tooling, dashboards and self-hosted infrastructure for small teams.</div>
+    </div>
+    <div style="padding: 26px 0 26px 24px; display: flex; flex-direction: column; gap: 9px;">
+      <div style="font-family: ui-monospace, Consolas, monospace; font-size: 10px; letter-spacing: 0.16em; color: #6c7786;">D</div>
+      <div style="font-size: 19px;">3D &amp; Visualisation</div>
+      <div style="font-size: 14px; line-height: 1.55; color: #8d98a8;">Architectural visualisation and product modelling, plus the CAD pipelines that feed it.</div>
+    </div>
+  </div>
+
+  <!-- SELECTED WORK -->
+  <div style="padding: 62px 48px 20px; display: flex; flex-direction: column; gap: 30px;">
+    <div style="display: flex; align-items: baseline; gap: 22px;">
+      <h2 style="margin: 0; font-size: 30px; font-weight: 400; letter-spacing: -0.02em;">Detail drawings</h2>
+      <div style="flex-grow: 1; height: 1px; background: rgba(140,175,205,0.22);"></div>
+      <div style="font-family: ui-monospace, Consolas, monospace; font-size: 10.5px; letter-spacing: 0.12em; color: #6c7786;">04 SELECTED</div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px;">
+
+      <!-- 01 -->
+      <div style="border: 1px solid rgba(140,175,205,0.2); background: rgba(255,255,255,0.022); display: flex; flex-direction: column;">
+        <div style="height: 210px; border-bottom: 1px dashed rgba(140,175,205,0.2); display: flex; align-items: center; justify-content: center; position: relative;">
+          <svg width="290" height="150" viewBox="0 0 290 150" fill="none" aria-hidden="true">
+            <rect x="12" y="12" width="266" height="126" stroke="rgba(160,195,225,0.28)" stroke-width="1" stroke-dasharray="5 5"></rect>
+            <g stroke="oklch(0.78 0.11 82)" stroke-width="1.1" stroke-opacity="0.85">
+              <circle cx="62" cy="72" r="27"></circle><circle cx="120" cy="48" r="19"></circle>
+              <circle cx="122" cy="103" r="20"></circle><circle cx="182" cy="70" r="30"></circle>
+              <circle cx="235" cy="46" r="16"></circle><circle cx="238" cy="102" r="21"></circle>
+            </g>
+          </svg>
+          <div style="position: absolute; top: 12px; left: 14px; font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.14em; color: #5d6879;">DET. 01</div>
+        </div>
+        <div style="padding: 22px 24px; display: flex; flex-direction: column; gap: 11px;">
+          <div style="font-size: 21px;">The layout tool that stopped guessing</div>
+          <div style="font-size: 14.5px; line-height: 1.6; color: #8d98a8;">A CAD packing routine jammed at 55% coverage, so operators re-shuffled layouts 50&ndash;100 times hoping for a fit. I replaced it with force-biased relaxation &mdash; benchmarked in Python, then ported to AutoLISP.</div>
+          <div style="display: flex; gap: 26px; padding-top: 6px; border-top: 1px solid rgba(140,175,205,0.14); margin-top: 4px; padding-top: 14px;">
+            <div style="display: flex; flex-direction: column; gap: 3px;">
+              <div style="font-family: ui-monospace, Consolas, monospace; font-size: 20px; color: oklch(0.78 0.11 82);">42 &rarr; 100%</div>
+              <div style="font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.1em; color: #6c7786;">SUCCESS AT 62% FILL</div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 3px;">
+              <div style="font-family: ui-monospace, Consolas, monospace; font-size: 20px; color: #e7eaef;">17 &rarr; 83%</div>
+              <div style="font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.1em; color: #6c7786;">AT 70% FILL</div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 8px; padding-top: 8px;">
+            <span style="font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.1em; color: #7f8b9b; border: 1px solid rgba(140,175,205,0.22); padding: 4px 9px;">PROCESS</span>
+            <span style="font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.1em; color: #7f8b9b; border: 1px solid rgba(140,175,205,0.22); padding: 4px 9px;">PYTHON</span>
+            <span style="font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.1em; color: #7f8b9b; border: 1px solid rgba(140,175,205,0.22); padding: 4px 9px;">AUTOLISP</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 -->
+      <div style="border: 1px solid rgba(140,175,205,0.2); background: rgba(255,255,255,0.022); display: flex; flex-direction: column;">
+        <div style="height: 210px; border-bottom: 1px dashed rgba(140,175,205,0.2); display: flex; align-items: center; justify-content: center; position: relative;">
+          <svg width="290" height="150" viewBox="0 0 290 150" fill="none" stroke-width="1" aria-hidden="true">
+            <g stroke="rgba(160,195,225,0.34)">
+              <rect x="20" y="18" width="76" height="42" rx="2"></rect>
+              <rect x="107" y="18" width="76" height="42" rx="2"></rect>
+              <rect x="194" y="18" width="76" height="42" rx="2"></rect>
+              <rect x="107" y="94" width="76" height="42" rx="2"></rect>
+            </g>
+            <g stroke="oklch(0.78 0.11 82)" stroke-opacity="0.75">
+              <path d="M58 60 L145 94 M145 60 L145 94 M232 60 L145 94"></path>
+            </g>
+            <g fill="#6c7786" font-family="ui-monospace, Consolas, monospace" font-size="8.5" letter-spacing="0.8">
+              <text x="42" y="43">DEV</text><text x="126" y="43">STAGE</text><text x="215" y="43">PROD</text><text x="123" y="119">RUNNER</text>
+            </g>
+          </svg>
+          <div style="position: absolute; top: 12px; left: 14px; font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.14em; color: #5d6879;">DET. 02</div>
+        </div>
+        <div style="padding: 22px 24px; display: flex; flex-direction: column; gap: 11px;">
+          <div style="font-size: 21px;">One runner for every environment</div>
+          <div style="font-size: 14.5px; line-height: 1.6; color: #8d98a8;">Environments and their locators declared in XML, credentials kept out of source, driven from a small desk tool &mdash; replacing a folder of near-identical Selenium scripts that each drifted on their own schedule.</div>
+          <div style="display: flex; gap: 8px; padding-top: 12px; margin-top: 4px; border-top: 1px solid rgba(140,175,205,0.14);">
+            <span style="font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.1em; color: #7f8b9b; border: 1px solid rgba(140,175,205,0.22); padding: 4px 9px; margin-top: 12px;">SELENIUM</span>
+            <span style="font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.1em; color: #7f8b9b; border: 1px solid rgba(140,175,205,0.22); padding: 4px 9px; margin-top: 12px;">PYTHON</span>
+            <span style="font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.1em; color: #7f8b9b; border: 1px solid rgba(140,175,205,0.22); padding: 4px 9px; margin-top: 12px;">QA</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03 -->
+      <div style="border: 1px solid rgba(140,175,205,0.2); background: rgba(255,255,255,0.022); display: flex; flex-direction: column;">
+        <div style="height: 210px; border-bottom: 1px dashed rgba(140,175,205,0.2); display: flex; align-items: center; justify-content: center; position: relative;">
+          <svg width="290" height="150" viewBox="0 0 290 150" fill="none" stroke-width="1" aria-hidden="true">
+            <rect x="18" y="16" width="254" height="118" stroke="rgba(160,195,225,0.34)"></rect>
+            <path d="M18 44 L272 44 M78 44 L78 134" stroke="rgba(160,195,225,0.34)"></path>
+            <g stroke="oklch(0.78 0.11 82)" stroke-opacity="0.7">
+              <path d="M96 62 L200 62 M96 78 L246 78 M96 94 L172 94 M96 110 L224 110"></path>
+            </g>
+            <g stroke="rgba(160,195,225,0.26)">
+              <path d="M32 60 L64 60 M32 76 L64 76 M32 92 L64 92"></path>
+            </g>
+          </svg>
+          <div style="position: absolute; top: 12px; left: 14px; font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.14em; color: #5d6879;">DET. 03</div>
+        </div>
+        <div style="padding: 22px 24px; display: flex; flex-direction: column; gap: 11px;">
+          <div style="font-size: 21px;">Operations dashboard</div>
+          <div style="font-size: 14.5px; line-height: 1.6; color: #8d98a8;">Personnel records, asset tracking and CAD launching pulled onto one self-hosted surface, so the studio stopped running on spreadsheets and tribal knowledge.</div>
+          <div style="display: flex; gap: 8px; padding-top: 12px; margin-top: 4px; border-top: 1px solid rgba(140,175,205,0.14);">
+            <span style="font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.1em; color: #7f8b9b; border: 1px solid rgba(140,175,205,0.22); padding: 4px 9px; margin-top: 12px;">IT</span>
+            <span style="font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.1em; color: #7f8b9b; border: 1px solid rgba(140,175,205,0.22); padding: 4px 9px; margin-top: 12px;">POCKETBASE</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 04 -->
+      <div style="border: 1px solid rgba(140,175,205,0.2); background: rgba(255,255,255,0.022); display: flex; flex-direction: column;">
+        <div style="height: 210px; border-bottom: 1px dashed rgba(140,175,205,0.2); display: flex; align-items: center; justify-content: center; position: relative; background: linear-gradient(150deg, rgba(160,195,225,0.06), transparent 70%);">
+          <div style="font-family: ui-monospace, Consolas, monospace; font-size: 10px; letter-spacing: 0.14em; color: #5d6879;">[ RENDER &mdash; YOUR STRONGEST ARCH-VIZ PIECE ]</div>
+          <div style="position: absolute; top: 12px; left: 14px; font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.14em; color: #5d6879;">DET. 04</div>
+        </div>
+        <div style="padding: 22px 24px; display: flex; flex-direction: column; gap: 11px;">
+          <div style="font-size: 21px;">A product catalogue, modelled once</div>
+          <div style="font-size: 14.5px; line-height: 1.6; color: #8d98a8;">[N] playground products built as a reusable 3D library that feeds both CAD site layouts and client-facing visuals &mdash; one source of truth instead of a remodel per proposal.</div>
+          <div style="display: flex; gap: 8px; padding-top: 12px; margin-top: 4px; border-top: 1px solid rgba(140,175,205,0.14);">
+            <span style="font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.1em; color: #7f8b9b; border: 1px solid rgba(140,175,205,0.22); padding: 4px 9px; margin-top: 12px;">3D</span>
+            <span style="font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.1em; color: #7f8b9b; border: 1px solid rgba(140,175,205,0.22); padding: 4px 9px; margin-top: 12px;">3DS MAX</span>
+            <span style="font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.1em; color: #7f8b9b; border: 1px solid rgba(140,175,205,0.22); padding: 4px 9px; margin-top: 12px;">ARCH-VIZ</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- EXPERIENCE — REVISION BLOCK -->
+  <div style="padding: 62px 48px 20px; display: flex; flex-direction: column; gap: 26px;">
+    <div style="display: flex; align-items: baseline; gap: 22px;">
+      <h2 style="margin: 0; font-size: 30px; font-weight: 400; letter-spacing: -0.02em;">Revisions</h2>
+      <div style="flex-grow: 1; height: 1px; background: rgba(140,175,205,0.22);"></div>
+      <div style="font-family: ui-monospace, Consolas, monospace; font-size: 10.5px; letter-spacing: 0.12em; color: #6c7786;">EXPERIENCE &amp; EDUCATION</div>
+    </div>
+
+    <div style="border: 1px solid rgba(140,175,205,0.24);">
+      <div style="display: grid; grid-template-columns: 70px 1fr 1.4fr 130px; font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.14em; color: #6c7786; border-bottom: 1px solid rgba(140,175,205,0.24); background: rgba(255,255,255,0.02);">
+        <div style="padding: 11px 16px; border-right: 1px solid rgba(140,175,205,0.16);">REV</div>
+        <div style="padding: 11px 16px; border-right: 1px solid rgba(140,175,205,0.16);">ROLE</div>
+        <div style="padding: 11px 16px; border-right: 1px solid rgba(140,175,205,0.16);">DESCRIPTION</div>
+        <div style="padding: 11px 16px;">DATE</div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 70px 1fr 1.4fr 130px; border-bottom: 1px solid rgba(140,175,205,0.14); align-items: stretch;">
+        <div style="padding: 18px 16px; border-right: 1px solid rgba(140,175,205,0.14); font-family: ui-monospace, Consolas, monospace; font-size: 12px; color: oklch(0.78 0.11 82);">C</div>
+        <div style="padding: 18px 16px; border-right: 1px solid rgba(140,175,205,0.14); display: flex; flex-direction: column; gap: 4px;">
+          <div style="font-size: 16.5px;">IT &amp; 3D Pipeline</div>
+          <div style="font-family: ui-monospace, Consolas, monospace; font-size: 10px; letter-spacing: 0.1em; color: #6c7786;">[STUDIO NAME]</div>
+        </div>
+        <div style="padding: 18px 16px; border-right: 1px solid rgba(140,175,205,0.14); font-size: 14px; line-height: 1.55; color: #8d98a8;">Multi-role: internal tooling and IT operations, CAD and 3D production pipelines, process automation for playground visualisation work.</div>
+        <div style="padding: 18px 16px; font-family: ui-monospace, Consolas, monospace; font-size: 11px; color: #8d98a8;">[CONFIRM]</div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 70px 1fr 1.4fr 130px; border-bottom: 1px solid rgba(140,175,205,0.14);">
+        <div style="padding: 18px 16px; border-right: 1px solid rgba(140,175,205,0.14); font-family: ui-monospace, Consolas, monospace; font-size: 12px; color: #6c7786;">B</div>
+        <div style="padding: 18px 16px; border-right: 1px solid rgba(140,175,205,0.14); display: flex; flex-direction: column; gap: 4px;">
+          <div style="font-size: 16.5px;">QA Engineer</div>
+          <div style="font-family: ui-monospace, Consolas, monospace; font-size: 10px; letter-spacing: 0.1em; color: #6c7786;">TRUNOVATE</div>
+        </div>
+        <div style="padding: 18px 16px; border-right: 1px solid rgba(140,175,205,0.14); font-size: 14px; line-height: 1.55; color: #8d98a8;">Functionality of large factory systems &mdash; OPC, MES, ERP. SQL discrepancy tracing, JIRA defect tracking, BI analysis to improve the testing process itself, and the product manuals new users onboard from.</div>
+        <div style="padding: 18px 16px; font-family: ui-monospace, Consolas, monospace; font-size: 11px; color: #8d98a8;">2022&ndash;2025</div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 70px 1fr 1.4fr 130px; border-bottom: 1px solid rgba(140,175,205,0.14);">
+        <div style="padding: 18px 16px; border-right: 1px solid rgba(140,175,205,0.14); font-family: ui-monospace, Consolas, monospace; font-size: 12px; color: #6c7786;">A</div>
+        <div style="padding: 18px 16px; border-right: 1px solid rgba(140,175,205,0.14); display: flex; flex-direction: column; gap: 4px;">
+          <div style="font-size: 16.5px;">QA Intern</div>
+          <div style="font-family: ui-monospace, Consolas, monospace; font-size: 10px; letter-spacing: 0.1em; color: #6c7786;">IINTOO</div>
+        </div>
+        <div style="padding: 18px 16px; border-right: 1px solid rgba(140,175,205,0.14); font-size: 14px; line-height: 1.55; color: #8d98a8;">Established a QA pipeline from nothing &mdash; test strategy, case planning, documentation and SQL database verification.</div>
+        <div style="padding: 18px 16px; font-family: ui-monospace, Consolas, monospace; font-size: 11px; color: #8d98a8;">2022</div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 70px 1fr 1.4fr 130px; background: rgba(255,255,255,0.014);">
+        <div style="padding: 18px 16px; border-right: 1px solid rgba(140,175,205,0.14); font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.12em; color: #6c7786;">EDU</div>
+        <div style="padding: 18px 16px; border-right: 1px solid rgba(140,175,205,0.14); display: flex; flex-direction: column; gap: 4px;">
+          <div style="font-size: 16.5px;">Two trainings</div>
+          <div style="font-family: ui-monospace, Consolas, monospace; font-size: 10px; letter-spacing: 0.1em; color: #6c7786;">TEL AVIV</div>
+        </div>
+        <div style="padding: 18px 16px; border-right: 1px solid rgba(140,175,205,0.14); font-size: 14px; line-height: 1.55; color: #8d98a8;">QA &amp; Automation &mdash; SV College: web and mobile environments, SQL, Python, Selenium. Visual Effects, Animation &amp; 3D &mdash; Israeli Animation College: modelling, architectural visualisation, compositing.</div>
+        <div style="padding: 18px 16px; font-family: ui-monospace, Consolas, monospace; font-size: 11px; color: #8d98a8;">DIPLOMA</div>
       </div>
     </div>
   </div>
 
-  <div style="height: 1px; background: #e0dcd2;"></div>
+  <!-- TOOLKIT -->
+  <div style="padding: 56px 48px 20px; display: flex; gap: 46px; align-items: flex-start;">
+    <div style="width: 220px; flex-shrink: 0; display: flex; flex-direction: column; gap: 10px;">
+      <h2 style="margin: 0; font-size: 24px; font-weight: 400; letter-spacing: -0.015em;">Schedule of tools</h2>
+      <div style="font-family: ui-monospace, Consolas, monospace; font-size: 10px; letter-spacing: 0.12em; color: #6c7786;">WHAT I REACH FOR</div>
+    </div>
+    <div style="flex-grow: 1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px;">
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.14em; color: oklch(0.78 0.11 82); border-bottom: 1px solid rgba(140,175,205,0.2); padding-bottom: 8px;">TESTING</div>
+        <div style="font-size: 14.5px; line-height: 1.85; color: #a3adbc;">Selenium<br>Testmo<br>JIRA &middot; X-Ray<br>Python</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.14em; color: oklch(0.78 0.11 82); border-bottom: 1px solid rgba(140,175,205,0.2); padding-bottom: 8px;">DATA</div>
+        <div style="font-size: 14.5px; line-height: 1.85; color: #a3adbc;">SQL &middot; MSSQL<br>Power BI<br>PocketBase</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.14em; color: oklch(0.78 0.11 82); border-bottom: 1px solid rgba(140,175,205,0.2); padding-bottom: 8px;">3D &amp; CAD</div>
+        <div style="font-size: 14.5px; line-height: 1.85; color: #a3adbc;">3ds Max<br>AutoCAD<br>Adobe Suite<br>Figma</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.14em; color: oklch(0.78 0.11 82); border-bottom: 1px solid rgba(140,175,205,0.2); padding-bottom: 8px;">LANGUAGES</div>
+        <div style="font-size: 14.5px; line-height: 1.85; color: #a3adbc;">Hebrew &mdash; native<br>English &mdash; native<br>French &mdash; good</div>
+      </div>
+    </div>
+  </div>
 
-  <div style="display: flex; flex-direction: column; gap: 16px;">
-    <div style="font-family: ui-monospace, 'Cascadia Code', Consolas, monospace; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #8a8578;">The four directions</div>
-
+  <!-- CONTACT -->
+  <div style="margin: 66px 48px 0; border: 1px solid rgba(140,175,205,0.28); background: rgba(255,255,255,0.022); padding: 46px 44px; display: flex; align-items: center; justify-content: space-between; gap: 40px;">
     <div style="display: flex; flex-direction: column; gap: 14px;">
-
-      <div style="display: flex; gap: 16px; align-items: flex-start;">
-        <div style="width: 30px; height: 30px; flex-shrink: 0; border: 1px solid #17181a; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: ui-monospace, Consolas, monospace; font-size: 13px;">A</div>
-        <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 4px;">
-          <div style="font-size: 17px; font-weight: 600;">Pass State</div>
-          <div style="font-size: 14px; line-height: 1.5; color: #4a4b4e;">The site is laid out like a test report. Your discipline becomes the design language itself.</div>
-          <div style="font-size: 13px; line-height: 1.45; color: #8a8578; font-style: italic;">Tradeoff: strongest QA signal, weakest showcase for the 3D work.</div>
-        </div>
-      </div>
-
-      <div style="display: flex; gap: 16px; align-items: flex-start;">
-        <div style="width: 30px; height: 30px; flex-shrink: 0; border: 1px solid #17181a; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: ui-monospace, Consolas, monospace; font-size: 13px;">B</div>
-        <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 4px;">
-          <div style="font-size: 17px; font-weight: 600;">Studio Editorial</div>
-          <div style="font-size: 14px; line-height: 1.5; color: #4a4b4e;">Magazine typography, big renders, work told as case studies. Craft-forward.</div>
-          <div style="font-size: 13px; line-height: 1.45; color: #8a8578; font-style: italic;">Tradeoff: reads as designer first; needs real render images to work.</div>
-        </div>
-      </div>
-
-      <div style="display: flex; gap: 16px; align-items: flex-start;">
-        <div style="width: 30px; height: 30px; flex-shrink: 0; border: 1px solid #17181a; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: ui-monospace, Consolas, monospace; font-size: 13px;">C</div>
-        <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 4px;">
-          <div style="font-size: 17px; font-weight: 600;">Blueprint</div>
-          <div style="font-size: 14px; line-height: 1.5; color: #4a4b4e;">Technical-drawing vocabulary — thin rules, annotation callouts, a title block. The drawing language your industry already reads.</div>
-          <div style="font-size: 13px; line-height: 1.45; color: #8a8578; font-style: italic;">Tradeoff: the one that unifies all four of your roles; risks feeling cold if under-designed.</div>
-        </div>
-      </div>
-
-      <div style="display: flex; gap: 16px; align-items: flex-start;">
-        <div style="width: 30px; height: 30px; flex-shrink: 0; border: 1px solid #17181a; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: ui-monospace, Consolas, monospace; font-size: 13px;">D</div>
-        <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 4px;">
-          <div style="font-size: 17px; font-weight: 600;">Obsidian</div>
-          <div style="font-size: 14px; line-height: 1.5; color: #4a4b4e;">Dark, panelled, instrument-like — built on the palette you already chose for your IT dashboard.</div>
-          <div style="font-size: 13px; line-height: 1.45; color: #8a8578; font-style: italic;">Tradeoff: already proven to your taste; most common look in this genre.</div>
-        </div>
-      </div>
-
+      <h2 style="margin: 0; font-size: 34px; font-weight: 400; letter-spacing: -0.025em; max-width: 20ch;">Looking for someone who tests and then fixes the process?</h2>
+      <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #8d98a8; max-width: 52ch;">Open to QA and automation roles, and to the multi-role work where quality, tooling and production sit with the same person.</p>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 12px; flex-shrink: 0;">
+      <div style="background: oklch(0.78 0.11 82); color: #14100a; padding: 0 28px; height: 48px; display: flex; align-items: center; justify-content: center; font-family: ui-monospace, Consolas, monospace; font-size: 12px; letter-spacing: 0.1em;">ROYREMEZ@GMAIL.COM</div>
+      <div style="border: 1px solid rgba(140,175,205,0.3); color: #e7eaef; padding: 0 28px; height: 48px; display: flex; align-items: center; justify-content: center; font-family: ui-monospace, Consolas, monospace; font-size: 12px; letter-spacing: 0.1em;">054-768-7846</div>
     </div>
   </div>
 
   <div style="flex-grow: 1;"></div>
 
-  <div style="font-family: ui-monospace, 'Cascadia Code', Consolas, monospace; font-size: 11.5px; line-height: 1.6; color: #8a8578; border-top: 1px solid #e0dcd2; padding-top: 16px;">Low fidelity on purpose. Copy, spacing and imagery all get real once a direction is picked.</div>
+  <!-- TITLE BLOCK -->
+  <div style="margin: 56px 48px 48px; border: 1px solid rgba(140,175,205,0.42); display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; font-family: ui-monospace, Consolas, monospace; font-size: 10.5px;">
+    <div style="padding: 16px 18px; border-right: 1px solid rgba(140,175,205,0.42); display: flex; flex-direction: column; gap: 6px;">
+      <span style="color: #5d6879; letter-spacing: 0.14em; font-size: 9px;">NAME</span>
+      <span style="font-size: 15px; color: #e7eaef; font-family: 'Iowan Old Style', Palatino, Georgia, serif;">Roy Remez</span>
+    </div>
+    <div style="padding: 16px 18px; border-right: 1px solid rgba(140,175,205,0.42); display: flex; flex-direction: column; gap: 6px;">
+      <span style="color: #5d6879; letter-spacing: 0.14em; font-size: 9px;">LOCATION</span>
+      <span style="color: #a3adbc;">ROSH HA&#39;AYIN, IL</span>
+    </div>
+    <div style="padding: 16px 18px; border-right: 1px solid rgba(140,175,205,0.42); display: flex; flex-direction: column; gap: 6px;">
+      <span style="color: #5d6879; letter-spacing: 0.14em; font-size: 9px;">ELSEWHERE</span>
+      <span style="color: #a3adbc;">LINKEDIN &middot; BEHANCE</span>
+    </div>
+    <div style="padding: 16px 18px; display: flex; flex-direction: column; gap: 6px;">
+      <span style="color: #5d6879; letter-spacing: 0.14em; font-size: 9px;">SHEET</span>
+      <span style="color: #a3adbc;">01 OF 01</span>
+    </div>
+  </div>
 
 </div>
 </x-dc>
