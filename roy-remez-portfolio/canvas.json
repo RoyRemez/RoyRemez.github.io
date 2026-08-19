@@ -23,16 +23,16 @@
     {
       "id": "needs-confirming",
       "x": 1360,
-      "y": 340,
+      "y": 380,
       "w": 420,
-      "text": "Needs you to confirm:\n\n1. Current role — your CV ends at Trunovate 2025, but your project files show you running IT and the 3D pipeline at a playground/arch-viz studio. Marked [STUDIO NAME] and [CONFIRM] in the revision table.\n\n2. [N] products in the 3D library.\n\n3. Phone number is on the page — say if you'd rather it weren't public."
+      "text": "Updated from your LinkedIn:\n\nElo&Nitzan, Automation & Process Specialist, May 2026–present, Ramat HaSharon. Trunovate corrected to Jun 2022–Mar 2025.\n\nPhone removed — email and LinkedIn only.\n\nNo placeholders left on this page. Every fact on it comes from your CV, your LinkedIn, or your own project files."
     },
     {
       "id": "still-to-build",
       "x": 1360,
-      "y": 700,
+      "y": 760,
       "w": 420,
-      "text": "Not built yet — tell me which you want:\n\n· A case-study page for the packing solver (your strongest single story)\n· A 3D / arch-viz gallery page\n· An about page\n· Mobile width for this home page\n· Hebrew / RTL version"
+      "text": "Not built yet — tell me which you want:\n\n· A tools & workflow page — the 2D/3D pipeline as its own story: the scatter solver, batch conversion, the CAD launcher, the MCP servers\n· A case-study page for the packing solver\n· An about page\n· Mobile width for this home page\n· Hebrew / RTL version"
     }
   ],
   "launch": { "view": "canvas", "page": "site" }
